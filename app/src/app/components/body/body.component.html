@@ -1,0 +1,123 @@
+<div class="overflow-hidden">
+  <div class="row justify-content-between">
+    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 pt-5 pb-5 bg-white rounded me-xl-4 me-md-4 me-sm-0 mb-xl-0 mb-md-0 mb-sm-4">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-2" style="padding-left: 19px; padding-right: 6px;">
+            <span class="bg-primary rounded-circle p-1" (click)="tragerfile()">
+              <input type="file" id="img" style="display:none" accept="image/*" (change)="onSelect($event)"/>
+              <img src="../../../assets/images/gallery.png" alt="Photo" 
+              />
+            </span>
+            <img
+            [src]="url"
+            title="Profile Picture"
+            height="75px"
+            width="100px"
+            class="rounded-circle col-12"
+            />
+          </div>
+          <div class="col-10 form-group mt-2" style="line-height: 3;">
+            <label for="">{{'body.NameResource'|translate}}</label>
+            <input type="text" class="form-control form-control-solid" />
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-4">
+        <span class="text-black-50 me-5" style="padding-left: 11px;">{{'body.Choosetypeoftheresource'|translate}}</span><br>
+        <mat-radio-group aria-label="Select an option " color="primary">
+          <mat-radio-button value="1">{{'body.Bookwithinaday'|translate}}</mat-radio-button>
+          <mat-radio-button value="2">{{'body.Bookingforaperiodoftime'|translate}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 bg-white rounded">
+      <div class="col-12 pt-2">
+        <div class="month d-flex align-items-center mb-5">
+          <div class="arrow ms-3">
+            <i class="fa fa-angle-up" (click)="counterMonth('add')"></i><br />
+            <i class="fa fa-angle-down" (click)="counterMonth('minus')"></i>
+          </div>
+          <div class="ms-2 col-8">{{ number }}</div>
+          <div >
+            <button type="button" class="btn btn-light">
+              {{'body.Month'|translate}}
+              <span class="fa fa-angle-down me-2"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex justify-content-between">
+        <div>
+          <label for="">{{'body.Resourcetime'|translate}} </label><br>
+          <mat-radio-group color="primary"
+            (change)="checkTime($event)"
+            aria-label="Select an option"
+          >
+            <mat-radio-button value="1"
+              ><img src="../../../assets/images/box-time.png" alt="" />
+             {{'body.Servicetime'|translate}}</mat-radio-button
+            >
+            <mat-radio-button value="2"
+              ><img src="../../../assets/images/clock.png" alt="" />
+              {{'body.Fixedtime'|translate}}</mat-radio-button
+            >
+          </mat-radio-group>
+        </div>
+        <div class="Counter d-flex align-items-center mb-3 " style="padding: 18px;">
+          <button
+            type="button"
+            [disabled]="check"
+            class="btn btn-primary"
+            (click)="counter('add')"
+          >
+            <i class="fa fa-plus"></i>
+          </button>
+          <p class="ms-5" style="margin-right: 30px;">{{'body.minute'|translate}} {{ count }}</p>
+          <button
+            type="button"
+            [disabled]="check"
+            class="btn btn-primary ms-5"
+            (click)="counter('minus')"
+          >
+            <i class="fa fa-minus"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex justify-content-between mt-2">
+
+        <div>
+          <label for="">{{'body.Multiplebooking'|translate}} <img src="../../../assets/images/clock.png" alt="" /></label><br>
+          <mat-radio-group color="primary"
+            (change)="checkbook($event)"
+            aria-label="Select an option"
+          >
+            <mat-radio-button value="1"
+              ><img src="../../../assets/images/Vector.png" alt="" />
+               {{'body.Onlyonereservation'|translate}} </mat-radio-button
+            >
+            <mat-radio-button value="2"
+              ><img src="../../../assets/images/Vector.png" alt="" /><img
+                src="../../../assets/images/Vector.png"
+                alt=""
+              />
+            {{'body.Bookingmorethanonepersonforthesameappointment'|translate}} </mat-radio-button
+            >
+          </mat-radio-group>
+        </div>
+        <div class="month d-flex align-items-center" style="padding: 19px;">
+            <div class="ms-2">{{ number_1 }}</div>
+          <div class="arrow ms-3">
+            <i class="fa fa-angle-up" (click)="counterAppointment('add')"></i><br />
+            <i class="fa fa-angle-down" (click)="counterAppointment('minus')"></i>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>

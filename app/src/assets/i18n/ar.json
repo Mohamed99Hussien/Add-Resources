@@ -1,0 +1,44 @@
+{
+    "header":{
+        "Addnewresources":"إضافة موارد جديدة",
+        "Activated":"مفعلة",
+        "SaveChanges":"حفظ التغييرات",
+        "DeleteResource":"حذف المورد"
+    },
+
+    "body":{
+        "NameResource":"اسم المورد",
+        "Choosetypeoftheresource":"اختر نوع المورد",
+        "Bookwithinaday":"احجز خلال يوم واحد",
+        "Bookingforaperiodoftime":"الحجز لمدة زمنية (أكثر من يوم واحد)",
+        "Month":"شهر",
+        "Resourcetime":"وقت الموارد",
+        "Servicetime":"وقت الخدمة",
+        "Fixedtime":"وقت ثابت",
+        "Multiplebooking":"الحجز المتعدد",
+        "Onlyonereservation":" حجز واحد فقط",
+        "Bookingmorethanonepersonforthesameappointment":"حجز أكثر من شخص لنفس الموعد",
+        "minute":"دقيقة"
+    },
+
+    "add-resources":{
+        "Determine":"تحديد ساعات العمل للمورد",
+        "note":".قم بتكوين إعدادات الأسبوع الخاصة بك هنا. ما عليك سوى تحريك أشرطة التمرير وإضافة/إزالة أوقات الاستراحة لإعداد ساعات العمل",
+        "Advanced":"إعدادات متقدمة",
+        "Traditional":"الإعدادات التقليدية",
+        "Start":"وقت البدء",
+        "End":"وقت النهاية"
+    },
+
+
+    "days":{
+        "Saturday":"السبت",
+        "Sunday":"الاحد",
+        "Monday":"الاثنين",
+        "Tuesday":"الثلاثاء",
+        "Wednesday":"الاربعاء",
+        "Thursday":"الخميس",
+        "Friday":"الجمعة"
+    }
+
+}

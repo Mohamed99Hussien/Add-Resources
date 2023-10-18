@@ -1,0 +1,50 @@
+{
+    "header":{
+        "Addnewresources":"Add new resources",
+        "Activated":"Activated",
+        "SaveChanges":"Save Changes",
+        "DeleteResource":"Delete Resource"
+    },
+
+    "body":{
+        "NameResource":"Name Resource",
+        "Choosetypeoftheresource":"Choose type of the resource",
+        "Bookwithinaday":"Book within a day",
+        "Bookingforaperiodoftime":"Booking for a period of time (more than one day)",
+        "Month":"Month",
+        "Resourcetime":"Resource time",
+        "Servicetime":"Service time",
+        "Fixedtime":"Fixed time",
+        "Multiplebooking":"Multiple booking",
+        "Onlyonereservation":" Only one reservation",
+        "Bookingmorethanonepersonforthesameappointment":"Booking more than one person for the same appointment",
+        "minute":"minute:"
+    },
+
+    "add-resources":{
+        "Determine":"Determine the working hours of the supplier",
+        "note":"Configure your week settings here. Simply move the sliders and add/remove break times to set up work hours.",
+        "Advanced":"Advanced Settings",
+        "Traditional":"Traditional settings",
+        "Start":"Start Time",
+        "End":"End Time"
+    },
+
+    "days":{
+        "Saturday":"Saturday",
+        "Sunday":"Sunday",
+        "Monday":"Monday",
+        "Tuesday":"Tuesday",
+        "Wednesday":"Wednesday",
+        "Thursday":"Thursday",
+        "Friday":"Friday"
+    }
+
+
+    
+
+
+
+    
+}
+

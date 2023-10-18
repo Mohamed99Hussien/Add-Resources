@@ -1,0 +1,76 @@
+<div class="bg-white mt-2 rounded p-3 col-12">
+    <div class="row py-5">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 ">
+            <h4 class="mb-0">{{'add-resources.Determine'|translate}}</h4>
+            <p class="text-black-50">{{'add-resources.note'|translate}}</p>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12  d-flex justify-content-end  ">
+            <button class="btn btn-outline-secondary me-3" type="button" style="margin-left: 20px;">
+                {{'add-resources.Advanced'|translate}}
+            </button>
+                <button type="button" class="btn btn-primary">
+                    {{'add-resources.Traditional'|translate}} 
+                </button>
+        </div>
+    </div>
+
+        <div *ngIf="translateService.currentLang == 'en'">
+            <div *ngFor="let day of days" class="row mb-4">
+                <div class="col-2 ">
+                    <mat-slide-toggle class="me-3" color="primary" style="line-height: 35px;">{{day}}</mat-slide-toggle>
+                </div>
+    
+                <div class=" col-5 d-flex ">
+    
+                    <div>
+                        <label for=""> {{'add-resources.Start'|translate}}</label>
+                        <input type="time" class="form-control form-control-solid"  style="width: 200px; "/>
+    
+                    </div>
+                    <span class= " col-1 text-center" style="line-height: 75px;">--</span>
+                    <div >
+                    <label for="">{{'add-resources.End'|translate}}</label>
+                    <input type="time" class="form-control form-control-solid " style="width: 200px;"/>
+                    </div>
+                </div>
+    
+    
+                <div class="col-4" style="margin-top: 26px;margin-left: -225px;">
+                    <img src="../../../assets/images/add.png" alt="" style="margin-left: 150px;" />
+                    <img src="../../../assets/images/Vector_2.png" alt=""  style="margin-left: 150px;"/>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="translateService.currentLang == 'ar'">
+            <div *ngFor="let day of days_ar" class="row mb-4">
+                <div class="col-2 ">
+                    <mat-slide-toggle class="me-3" color="primary" style="line-height: 35px;">{{day}}</mat-slide-toggle>
+                </div>
+    
+                <div class=" col-5 d-flex ">
+    
+                    <div>
+                        <label for=""> {{'add-resources.Start'|translate}}</label>
+                        <input type="time" class="form-control form-control-solid"  style="width: 200px;"/>
+    
+                    </div>
+                    <span class= " col-1 text-center" style="line-height: 75px;">--</span>
+                    <div >
+                    <label for="">{{'add-resources.End'|translate}}</label>
+                    <input type="time" class="form-control form-control-solid "  style="width: 200px;"/>
+                    </div>
+                </div>
+    
+    
+                <div class="col-4" style="margin-top: 26px;">
+                    <img src="../../../assets/images/add.png" alt="" style="margin-left: 150px;" />
+                    <img src="../../../assets/images/Vector_2.png" alt=""  style="margin-left: 150px;"/>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</div>

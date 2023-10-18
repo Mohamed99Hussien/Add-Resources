@@ -1,0 +1,24 @@
+<div>
+    <div class="row pb-5 pt-5 d-flex">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
+            <button class="btn btn-outline-secondary" type="button">
+                <span *ngIf="translateService.currentLang == 'en'"class="fa fa-light fa-arrow-left"></span>
+                <span *ngIf="translateService.currentLang == 'ar'"class="fa fa-light fa-arrow-right"></span>
+            </button>
+                <span class="ms-3 fs-5" style="line-height: 35px;margin-right: 20px;">{{'header.Addnewresources' |translate}}</span>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12  d-flex justify-content-end ">
+            <mat-slide-toggle class="me-3" color="primary" style="line-height: 35px;">{{'header.Activated'|translate}}</mat-slide-toggle>
+                <button type="button" class="btn btn-dark me-3 " >{{'header.SaveChanges'|translate}}</button>
+                <button type="button" class="btn btn-outline-danger" style="margin-right: 15px;">
+                    <span class="fa fa-trash-can me-2"></span>
+                   {{'header.DeleteResource'|translate}}
+                </button>
+
+                <select name="" id="" (change)="translate($event)" style="margin-right: 15px;">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                </select>
+        </div>
+    </div>
+</div>
